@@ -1,0 +1,23 @@
+
+GET  http://localhost:4004/browse
+
+### Submit Order
+POST http://localhost:4004/browse/bookValue
+Content-Type: application/json
+Authorization: Basic alice:
+
+{
+  "book": 201,
+  "weight": 2,
+  "pages": 2
+}
+
+### Submit Order
+POST http://localhost:4004/browse/submitOrder
+Content-Type: application/json
+Authorization: Basic alice:
+
+{
+  "book": 201,
+  "quantity": 2
+}
